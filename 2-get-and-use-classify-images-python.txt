@@ -1,0 +1,28 @@
+# duhaime blogpost step two - getting, and running, the classify_images.py script
+
+# http://douglasduhaime.com/posts/identifying-similar-images-with-tensorflow.html
+
+# these commands are done at the terminal
+
+# get the full updated script from Duhaime's Github account
+wget https://gist.githubusercontent.com/duhaime/2a71921c9f4655c96857dbb6b6ed9bd6/raw/0e72c48e698395265d029fabad0e6ab1f3961b26/classify_images.py
+
+# this script is also in this repo as well.
+
+# install the new dependency inside your virtual environment
+pip install psutil
+
+# run the script on a glob of images
+# that is, put your images into a subfolder called 'images'
+# relative to where you are working.
+# this took about an hour for us
+
+python classify_images.py "images/*"
+
+# similarly, get the 'get_tsne_vector_projections.py' script from Duhaime at:
+#http://douglasduhaime.com/assets/posts/similar-images/utils/get_tsne_vector_projections.py
+
+# this script is in this repo as well. It takes as its input the folder image_vectors.
+
+# the result from this script, 'image_tsne_projections.json' can be loaded with the 'affinity-plot-tsne-plots.R' script
+# calculating the affinity clusters can take a long time. You may load our results by loading the d.apclus.Rda file into R.

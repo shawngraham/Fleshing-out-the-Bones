@@ -1,0 +1,13 @@
+# duhaime blogpost step one - installing tensorflow
+# http://douglasduhaime.com/posts/identifying-similar-images-with-tensorflow.html
+
+# these commands are done at the terminal
+
+# create virtual environment using python 3.5 with name '3.5'
+conda create -n 3.5 python=3.5
+
+# activate the virtual environment
+source activate 3.5
+
+# install tensorflow
+conda install -c conda-forge tensorflow
