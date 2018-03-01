@@ -25,4 +25,4 @@ python classify_images.py "images/*"
 # this script is in this repo as well. It takes as its input the folder image_vectors.
 
 # the result from this script, 'image_tsne_projections.json' can be loaded with the 'affinity-plot-tsne-plots.R' script
-# calculating the affinity clusters can take a long time. You may load our results by loading the d.apclus.Rda file into R.
+# calculating the affinity clusters can take a long time. 
